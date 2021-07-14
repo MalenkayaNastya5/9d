@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	
+	<style>
+        .wrap{
+            width: 600px;
+            border: solid thin red;
+            padding: 20px;
+        }
+        
+        
+        div{
+            background-image: url(fon.jpg);
+            background-repeat: no-repeat;
+            background-size: 400px auto;
+            height: 300px;
+            width: 400px;
+            border: 1px solid #000;
+            color: #FF0;
+            background-position: center top;
+            background-origin: content-box;
+            margin: 20px;
+
+        }        
+
+   
+        
+        
+        
+        
+@-webkit-keyframes myanimation1{
+	
+	from{
+		width: 400px;
+		background-size: 400px auto;
+	}
+	to{
+		width: 600px;
+		background-size: 600px auto;
+	}
+	
+	
+}        
+        
+
+        
+        
+        
+@-webkit-keyframes myanimation2{
+	
+	from{
+		margin-left: 0;
+        border: solid 0px red;
+	}
+	to{
+		margin-left: 300px;
+        border: solid 5px blue;
+	}
+	
+	
+}          
+        
+        
+        
+        
+        
+        
+        
+        
+        
+ section:hover #fon1 {
+-webkit-animation:myanimation1 5s;
+	
+}       
+        
+        
+        
+ section:hover #fon2 {
+-webkit-animation:myanimation2 5s;
+	
+}       
+        
+        
+          
+        
+        
+        
+        
+        
+        
+        
+        
+@-webkit-keyframes myanimation3{
+	
+0%{color:#F00}
+25%{color:#0F0}
+50%{color:#F0F}
+75%{color:#F6F}
+100%{color:#333}
+	
+}        
+        
+
+#fon3{
+	-webkit-animation: myanimation3 5s  infinite;
+	font-size: 36px;
+	font-weight: bold;
+}
+        
+        
+        
+        
+    </style>
+
+</head>
+
+<body>
+	
+
+
+
+
+
+<section class="wrap">
+
+
+    <div id="fon1">Анимация 1</div>
+    <div id="fon2">Анимация 2</div>
+    <div id="fon3">Анимация 3</div>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
